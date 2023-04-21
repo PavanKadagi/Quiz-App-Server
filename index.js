@@ -3,7 +3,6 @@ require('./database/connection')
 const express = require('express');
 const app= express();
 const cors = require('cors');
-// const User = require('./models/userSchema');
 const port = process.env.PORT || 5000;
 const cookieParser = require('cookie-parser');
 // const bodyparser = require('body-parser');

@@ -1,16 +1,18 @@
 require("../database/connection");
 const { Html,Css,Js,Express,Mongodb ,React} = require("../models/dataSchema");
+// const User = require("../models/userSchema");
 
 const getQuizData = async (req, res) => {
   try {
     let { language } = req.params;
     let  language2 = req.query;
     console.log(language,"----"+language2.page)
+    let index = language.indexOf("=");
     let indexOfAnd = language.indexOf("&");
     let indexOfEqual = language.indexOf("=");
     let page = language.slice(indexOfEqual + 1, indexOfAnd);
 
-    language = language.slice(0, indexOfAnd-4) || language;
+    language = language.slice(0, index-4) || language;
     let data;
     const limit = req.query.limit || 1;
     const skip = (page - 1) * limit;
