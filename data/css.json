@@ -1,0 +1,82 @@
+[
+    {
+        "question": "CSS stands for ______",
+        "option1": "Color Style Sheets",
+        "option2": "Cascade Sheets Style",
+        "option3": "Cascade Style Sheet",
+        "option4": "Cascading Style Sheets",
+        "answer": "Cascading Style Sheets"
+    },
+    {
+        "question": "What is CSS?",
+        "option1": "CSS is a style sheet language",
+        "option2": "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+        "option3": "CSS is the language used to style the HTML documents",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which tag is used to embed CSS in HTML document?",
+        "option1": "<CSS>",
+        "option2": "<!DOCTYPE html>",
+        "option3": "<script>",
+        "option4": "<style>",
+        "answer": "<style>"
+    },
+    {
+        "question": "The <link> tag goes inside",
+        "option1": "the title section",
+        "option2": "the body section",
+        "option3": "the head section",
+        "option4": "None of the above",
+        "answer": "the head section"
+    },
+    {
+        "question": "What CSS define in HTML ?",
+        "option1": "How to send HTML elements",
+        "option2": "How to save HTML elements",
+        "option3": "How to display HTML elements",
+        "option4": "How to made HTML elements",
+        "answer": "How to display HTML elements"
+    },
+    {
+        "question": "Which HTML attribute is used to define inline styles ?",
+        "option1": "style",
+        "option2": "styles",
+        "option3": "class",
+        "option4": "Font",
+        "answer": "style"
+    },
+    {
+        "question": "CSS is also created and maintained by group of people within",
+        "option1": "W3D",
+        "option2": "W3B",
+        "option3": "W3A",
+        "option4": "W3C",
+        "answer": "W3C"
+    },
+    {
+        "question": "CSS1 Developed in _____ by the W3C, describes CSS language and simple visual formatting for all HTML tags.",
+        "option1": "1996",
+        "option2": "1994",
+        "option3": "1992",
+        "option4": "1995",
+        "answer": "1996"
+    },
+    {
+        "question": "From which version of CSS under development since the late 1990s, added a lot of extra features ?",
+        "option1": "CSS1",
+        "option2": "CSS2",
+        "option3": "CSS3",
+        "option4": "None of the above",
+        "answer": "CSS3"
+    },
+    {
+        "question": "How many types of levels in style sheets ?",
+        "option1": "two level",
+        "option2": "One level",
+        "option3": "four level",
+        "option4": "three level",
+        "answer": "three level"
+    }
+]

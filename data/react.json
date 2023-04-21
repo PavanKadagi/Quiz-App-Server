@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Which of the following is the correct name of React.js?",
+        "option1": "React",
+        "option2": "React.js",
+        "option3": "ReactJS",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which of the following are the advantages of React.js?",
+        "option1": "React.js can increase the application's performance with Virtual DOM.",
+        "option2": "React.js can render both on client and server side.",
+        "option3": "React.js is easy to integrate with other frameworks such as Angular, BackboneJS since it is only a view library.",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which of the following is not a disadvantage of React.js?",
+        "option1": "React.js has only a view layer. We have put your code for Ajax requests, events and so on.",
+        "option2": "The library of React.js is pretty large.",
+        "option3": "The JSX in React.js makes code easy to read and write.",
+        "option4": "The learning curve can be steep in React.js.",
+        "answer": "The JSX in React.js makes code easy to read and write."
+    },
+    {
+        "question": "Which of the following command is used to install create-react-app?",
+        "option1": "npm install -g create-react-app",
+        "option2": "npm install create-react-app",
+        "option3": "npm install -f create-react-app",
+        "option4": "install -g create-react-app",
+        "answer": "npm install -g create-react-app"
+    },
+    {
+        "question": "What of the following is used in React.js to increase performance?",
+        "option1": "Original DOM",
+        "option2": "Virtual DOM",
+        "option3": "Both A and B.",
+        "option4": "None of the above.",
+        "answer": "Virtual DOM"
+    },
+    {
+        "question": "A class is a type of function, but instead of using the keyword function to initiate it, which keyword do we use?",
+        "option1": "Constructor",
+        "option2": "Class",
+        "option3": "Object",
+        "option4": "DataObject",
+        "answer": "Class"
+    },
+    {
+        "question": "Which of the following acts as the input of a class-based component?",
+        "option1": "Class",
+        "option2": "Factory",
+        "option3": "Render",
+        "option4": "Props",
+        "answer": "Props"
+    },
+    {
+        "question": "Which of the following keyword is used to create a class inheritance?",
+        "option1": "Create",
+        "option2": "Inherits",
+        "option3": "Extends",
+        "option4": "This",
+        "answer": "Extends"
+    },
+    {
+        "question": "What is the default port where webpack-server runs?",
+        "option1": "3000",
+        "option2": "8080",
+        "option3": "3030",
+        "option4": "6060",
+        "answer": "8080"
+    },
+    {
+        "question": "How many numbers of elements a valid react component can return?",
+        "option1": "1",
+        "option2": "2",
+        "option3": "4",
+        "option4": "1",
+        "answer": "1"
+    }
+]

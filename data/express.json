@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Who is credited as the developer of Express.js?",
+        "option1": "Larry wall",
+        "option2": "Rich Hickey",
+        "option3": "TJ Holowaychuk",
+        "option4": "Rob Pike",
+        "answer": "TJ Holowaychuk"
+    },
+    {
+        "question": "Which of the following are the core features of the Express framework?",
+        "option1": "It allows us to set up middleware to respond to HTTP Requests.",
+        "option2": "It defines a routing table that can work as per HTTP Method and URL.",
+        "option3": "It is used to render the HTML pages dynamically.",
+        "option4": "All of the above.",
+        "answer": "All of the above"
+    },
+    {
+        "question": "n which of the following year was Express.js initially released?",
+        "option1": "November 2010",
+        "option2": "November 2011",
+        "option3": "December 2010",
+        "option4": "December 2011",
+        "answer": "November 2010"
+    },
+    {
+        "question": "What is the way to store local variables that can be accessed within the application?",
+        "option1": "Using Config file",
+        "option2": "Using database",
+        "option3": "Using app.locals",
+        "option4": "Using app.storage",
+        "answer": "Using app.locals"
+    },
+    {
+        "question": "In combination with a request method, root paths define the endpoints at which requests can be made. Which of the following are valid forms of route path?",
+        "option1": "strings",
+        "option2": "string patterns",
+        "option3": "regular expressions",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    },
+    {
+        "question": "Where are the captured values populated regarding the route parameters?",
+        "option1": "req.data",
+        "option2": "app.locals",
+        "option3": "req.params",
+        "option4": "All of the above",
+        "answer": "req.params"
+    },
+    {
+        "question": "How is it possible to create chainable route handlers for a route path in Express.js?",
+        "option1": "Using app.route()",
+        "option2": "Using app.routes()",
+        "option3": "Using app.router()",
+        "option4": "Using app.routing()",
+        "answer": "Using app.route()"
+    },
+    {
+        "question": "Which of the following function arguments are available to Express.js Route handlers?",
+        "option1": "req - the request object",
+        "option2": "res - the response object",
+        "option3": "next",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which of the following is the Scaffolding in Express.js?",
+        "option1": "Yeoman",
+        "option2": "Express application generator",
+        "option3": "Handler functions",
+        "option4": "Both A & B",
+        "answer": "Both A & B"
+    },
+    {
+        "question": "In Express.js, the method app.all(path, callback [, callback ...]) can accept all HTTP methods:",
+        "option1": "True",
+        "option2": "False",
+        "option3": "Insufficient data",
+        "option4": "None of the above",
+        "answer": "True"
+    }
+]

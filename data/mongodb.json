@@ -1,0 +1,82 @@
+[
+    {
+        "question": "The data model available within MongoDB allows us to represent ___.",
+        "option1": "Hierarchical relationships",
+        "option2": "Both A. and C.",
+        "option3": "None of the mentioned above",
+        "option4": "Able to handle complex structures",
+        "answer": "Both A. and C."
+    },
+    {
+        "question": "A record in MongoDB is a ___.",
+        "option1": "Document",
+        "option2": "Table",
+        "option3": "Application",
+        "option4": "None of the mentioned above",
+        "answer": "Document"
+    },
+    {
+        "question": "MongoDB stores documents in ___.",
+        "option1": "Store",
+        "option2": "Collections",
+        "option3": "Indexes",
+        "option4": "None of the mentioned above",
+        "answer": "Collections"
+    },
+    {
+        "question": " The Collections screen ___ the existing collections.",
+        "option1": "Lists",
+        "option2": "Package",
+        "option3": "Network",
+        "option4": "None of the mentioned above",
+        "answer": "Lists"
+    },
+    {
+        "question": "The Collections screen displays ___ for each collection in the selected database.",
+        "option1": "Collection name",
+        "option2": "Number of documents in the collection",
+        "option3": "Both A. and B.",
+        "option4": "None of the mentioned above",
+        "answer": "Both A. and B."
+    },
+    {
+        "question": " A document is a set of ___.",
+        "option1": "Key-value pairs",
+        "option2": "Application pairs",
+        "option3": "Activity pair set",
+        "option4": "None of the mentioned above",
+        "answer": "Key-value pairs"
+    },
+    {
+        "question": "Amongst which of the following is / are true about the authentication ___.",
+        "option1": "It is a process of verifying the identity of a client",
+        "option2": "It is a process of verifying network",
+        "option3": "It is a process of verifying the database",
+        "option4": "None of the mentioned above",
+        "answer": "It is a process of verifying the identity of a client"
+    },
+    {
+        "question": "The document structure is more in line with how developers construct their ___.",
+        "option1": "1996",
+        "option2": "1994",
+        "option3": "1992",
+        "option4": "1995",
+        "answer": "1996"
+    },
+    {
+        "question": "From which version of CSS under development since the late 1990s, added a lot of extra features ?",
+        "option1": "Network and security",
+        "option2": "Classes and objects",
+        "option3": "Tables and relations",
+        "option4": "None of the mentioned above",
+        "answer": "Classes and objects"
+    },
+    {
+        "question": "Cursor is a pointer to the result set of a ___.",
+        "option1": "Query",
+        "option2": "Table",
+        "option3": "Dataset",
+        "option4": "None of the mentioned above",
+        "answer": "Query"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What do you understand by HTML?",
+        "option1": "HTML describes the structure of a webpage",
+        "option2": "HTML is the standard markup language mainly used to create web pages",
+        "option3": "HTML consists of a set of elements that helps the browser how to view the content",
+        "option4": "All of the above",
+        "answer": "All of the above"
+      },
+      {
+        "question": "Who is the father of HTML?",
+        "option1": "Rasmus Lerdorf",
+        "option2": "Tim Berners-Lee",
+        "option3": "Brendan Eich",
+        "option4": "Sergey Brin",
+        "answer": "Tim Berners-Lee"
+      },
+      {
+        "question": "HTML stands for ___",
+        "option1": "HyperText Markup Language",
+        "option2": "HyperText Machine Language",
+        "option3": "HyperText Marking Language",
+        "option4": "HighText Marking Language",
+        "answer": "HyperText Markup Language"
+      },
+      {
+        "question": "Which is used to read an HTML page and render it?",
+        "option1": "Web server",
+        "option2": "Web network",
+        "option3": "Web browser",
+        "option4": "Web matrix",
+        "answer": "Web browser"
+      },
+      {
+        "question": "Which tag is used for inserting the largest heading in HTML?",
+        "option1": "head",
+        "option2": "<h1>",
+        "option3": "<h6>",
+        "option4": "heading",
+        "answer": "<h1>"
+      },
+      {
+        "question": "Which is used to create Web Pages ?",
+        "option1": "C++",
+        "option2": "Java",
+        "option3": "HTML",
+        "option4": "JVM",
+        "answer": "HTML"
+      },
+      {
+        "question": "HTML is a set of markup ___.",
+        "option1": "tags",
+        "option2": "sets",
+        "option3": "attributes",
+        "option4": "none of the above",
+        "answer": "tags"
+      },
+      {
+        "question": "HTML tags are used to describe document ___.",
+        "option1": "definition",
+        "option2": "content",
+        "option3": "language",
+        "option4": "model",
+        "answer": "content"
+      },
+      {
+        "question": "HTML program is saved using ___ extension.",
+        "option1": ".htmn",
+        "option2": ".html",
+        "option3": ".htnl",
+        "option4": ".htnl",
+        "answer": ".html"
+      },
+      {
+        "question": "HTML program can be read and rendered by ___.",
+        "option1": "Compiler",
+        "option2": "Server",
+        "option3": "Web Browser",
+        "option4": "Interpreter",
+        "answer": "Web Browser"
+      }
+]

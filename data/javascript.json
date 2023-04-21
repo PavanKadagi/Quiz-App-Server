@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Javascript is a _____ language.",
+        "option1": "Programming",
+        "option2": "Application",
+        "option3": "Scripting",
+        "option4": "None of the above",
+        "answer": "Scripting"
+    },
+    {
+        "question": "JavaScript is a _____ Side Scripting Language.",
+        "option1": "Server",
+        "option2": "Browser",
+        "option3": "ISP",
+        "option4": "None of the above",
+        "answer": "Browser"
+    },
+    {
+        "question": "Which of the following purpose, JavaScript is designed for ?",
+        "option1": "To Execute Query Related to DB on Server",
+        "option2": "To Style HTML Pages",
+        "option3": "To Perform Server Side Scripting Opertion",
+        "option4": "To add interactivity to HTML Pages.",
+        "answer": "To add interactivity to HTML Pages."
+    },
+    {
+        "question": "JavaScript can be written",
+        "option1": "directly on the Server Script",
+        "option2": "directly into HTML pages",
+        "option3": "All of the above",
+        "option4": "None of the above",
+        "answer": "directly into HTML pages"
+    },
+    {
+        "question": "JavaScript code is written inside file having extension",
+        "option1": ".jvs",
+        "option2": ".js",
+        "option3": ".jsc",
+        "option4": ".javascript",
+        "answer": ".js"
+    },
+    {
+        "question": "Why JavaScript is called as Lightweight Programming Language ?",
+        "option1": "because JS is client side scripting",
+        "option2": "because JS is available free of cost.",
+        "option3": "because we can add programming functionality inside JS",
+        "option4": "because JS can provide programming functionality inside but up to certain extend.",
+        "answer": "because JS can provide programming functionality inside but up to certain extend."
+    },
+    {
+        "question": "JavaScript is also called as",
+        "option1": " Client Side Scripting Language",
+        "option2": "Server Side Scripting Language",
+        "option3": "All of the above",
+        "option4": "None of the above",
+        "answer": " Client Side Scripting Language"
+    },
+    {
+        "question": "Which is correct about JavaScript?",
+        "option1": "JavaScript is an Object-Based language",
+        "option2": "JavaScript is Assembly-language",
+        "option3": "JavaScript is an Object-Oriented language",
+        "option4": "JavaScript is a High-level language",
+        "answer": "JavaScript is an Object-Based language"
+    },
+    {
+        "question": "JavaScript code can be called by using",
+        "option1": "RMI",
+        "option2": "Preprocessor",
+        "option3": "Function / Method",
+        "option4": "None of the above",
+        "answer": "Function / Method"
+    },
+    {
+        "question": "Which of the following is not javascript data types?",
+        "option1": "Null type",
+        "option2": "Undefined type",
+        "option3": "Number type",
+        "option4": "All of the above",
+        "answer": "All of the above"
+    }
+]
