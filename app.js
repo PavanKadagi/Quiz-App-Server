@@ -10,11 +10,12 @@ const admin = require('./router/admin');
 
 
 // app.use(bodyparser.urlencoded({extended:true}))
+app.use(cors())
 app.use(express.json({limit: '50mb'}));
 // app.use(express.urlencoded({extended:false}))
-app.use(cors({
-    origin:["http://localhost:3000","https://mern-quiz-app-9mec.onrender.com/"]
-}));
+// app.use(cors({
+//     origin:["http://localhost:3000","https://mern-quiz-app-9mec.onrender.com/"],
+// }));
 app.use(cookieParser());
 // we link the router files to make our route easy
 app.use("/admin",admin);
