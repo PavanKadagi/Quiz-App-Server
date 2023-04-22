@@ -13,7 +13,7 @@ const admin = require('./router/admin');
 app.use(express.json({limit: '50mb'}));
 // app.use(express.urlencoded({extended:false}))
 app.use(cors({
-    origin:["http://localhost:3000/","http://mern-quiz-app.onrender.com"]
+    origin:["http://localhost:3000","https://mern-quiz-app-9mec.onrender.com/"]
 }));
 app.use(cookieParser());
 // we link the router files to make our route easy

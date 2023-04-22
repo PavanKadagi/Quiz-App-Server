@@ -204,6 +204,7 @@ const userSignIn = async (req, res) => {
     }
     // console.log(userLogin);
   } catch (error) {
+    console.log(error)
     return res.status(400).json({ error: "Invalid Credientials" });
   }
 };
