@@ -99,10 +99,13 @@ const sendVerifyMail = (name,email,userId)=>{
 
 const verifyMail = async (req,res)=>{
   try {
+    
     const updateUser = await User.findByIdAndUpdate({_id:req.body.id},{is_verified:true});
     console.log(updateUser);
     if(updateUser){
   res.status(200).json({message:"Verify Successfully...!"})
+    }else{
+      res.status(400).json({error:"User is already login...!"})
     }
   } catch (error) {
     res.status(400).json({error:"not validate"})
