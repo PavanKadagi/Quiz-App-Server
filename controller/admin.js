@@ -13,15 +13,15 @@ const adminLogin = async(req,res)=>{
         if(admin.is_admin){
             const token = await admin.generatingToken();
             // console.log('backend login',)
-            console.log("-----------   --token", token);
+            console.log("-------------token", token);
     
             res.cookie("admin", token, {
-              expires: new Date(Date.now() + 2589200000),
+              expires: new Date(Date.now() + 25892000),
               httpOnly: true,
-              path: "/",
+              // path: "/",
             });
             //  25892000000 (30days)
-        return res.status(200).json({ message: "Signin Successfull...!" });
+        return res.status(200).json({ message: "Signin Successfull...!",token });
         }else{
         res.status(400).json({error:"Invalid email and password"})
         }

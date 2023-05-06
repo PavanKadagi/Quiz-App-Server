@@ -1,10 +1,10 @@
 const express = require("express");
 const admin = express.Router();
-const bodyparser = require('body-parser');
+// const bodyparser = require('body-parser');
 const bcrypt = require("bcrypt");
 
-admin.use(bodyparser.json());
-admin.use(bodyparser.urlencoded({extended:true}));
+// admin.use(bodyparser.json());
+// admin.use(bodyparser.urlencoded({extended:true}));
 
 const adminAuthenticate = require('../middleware/adminAuthenticate')
 const {adminLogin,adminLogout,adminDashboard} = require('../controller/admin');

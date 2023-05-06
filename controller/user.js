@@ -85,7 +85,7 @@ const sendVerifyMail = (name,email,userId)=>{
       from:process.env.EMAIL,
       to:email,
       subject:'For Verification mail',
-      html:`<p>Hi ${name}, please click here to <a href="http://127.0.0.1:3000/verify?id=${userId}"> Verify </a> your mail.</p>`
+      html:`<p>Hi ${name}, please click here to <a href="${process.env.CIIENT_URL}/verify?id=${userId}"> Verify </a> your mail.</p>`
     }
    
 
@@ -99,8 +99,8 @@ const sendVerifyMail = (name,email,userId)=>{
 
 const verifyMail = async (req,res)=>{
   try {
-    
-    const updateUser = await User.findByIdAndUpdate({_id:req.body.id},{is_verified:true});
+    console.log(req.query)
+    const updateUser = await User.findByIdAndUpdate({_id:req.query.id},{is_verified:true});
     console.log(updateUser);
     if(updateUser){
   res.status(200).json({message:"Verify Successfully...!"})
@@ -115,56 +115,58 @@ const verifyMail = async (req,res)=>{
 
 const userSignUp = async (req, res) => {
   try {
-    const { name, email, phone, profession, address, dob, password } = req.body;
+    const { nameVal, emailVal, phoneVal, profession, address, dob, passwordVal } = req.body;
+    console.log(req.body)
     if (
-      !name ||
-      !email ||
-      !phone ||
+      !nameVal ||
+      !emailVal ||
+      !phoneVal ||
       !profession ||
       !address ||
       !dob ||
-      !password
+      !passwordVal
     ) {
       return res
         .status(422)
         .json({ error: "Plz filled the field properly...!" });
     }
 
-    const userExist = await User.findOne({ email: email });
+    const userExist = await User.findOne({ email: emailVal });
 
     if (userExist) {
       return res.status(422).json({ error: "Email already Exist...!" });
     }
 
     const newUser = new User({
-      name,
-      email,
-      phone,
+      name:nameVal,
+      email:emailVal,
+     phone: phoneVal,
       profession,
       address,
       dob,
-      password,
+      password:passwordVal,
       is_admin:false
     });
 
     const userData = await newUser.save();
-  
+  console.log(userData)
     if(userData){
       console.log('00000000000',userData._id)
-      sendVerifyMail(name,email,userData._id);
+      sendVerifyMail(nameVal,emailVal,userData._id);
     res.status(201).json({ message: "Your registration has been successfully, Please verify your mail." }); 
     }
     else{
     res.status(500).json({ error: "Failed to registered...!" });
     }
   } catch (error) {
-    // console.log("login ---", error.errors.phone);
+    console.log("login ---", error.message);
     res.status(500).json({ error: "Failed to registered...!" });
   }
 };
 
 const userSignIn = async (req, res) => {
   try {
+    console.log(req.body)
     const { email, password } = req.body;
 
     if (!email || !password) {
@@ -183,21 +185,24 @@ const userSignIn = async (req, res) => {
            //need to generate the token and stored cookie after the password match
            const token = await userLogin.generatingToken();
            // console.log('backend login',)
-           console.log("-----------   --token", token);
+           console.log("-------------token", token);
    
            res.cookie("user", token, {
-             expires: new Date(Date.now() + 2589200000),
-             httpOnly: true,
-             path: "/",
-           });
+            expires: new Date(Date.now() + 258900000),
+            httpOnly: true,
+            secure:true,
+            sameSite:"none"
+          });
 
+          // req.session.user = token;
+          //  console.log(cookie)
       
-        return res.status(200).json({ message: "Signin Successfull...!" });
+        return res.status(200).json({ message: "Signin Successfull...!",token });
        }else{
         return res.status(400).json({ error: "Please verify your mail...!" });
        }
       } else {
-        return res.status(400).json({ error: " Credientials...!" });
+        return res.status(400).json({ error: "Invalid Credientials...!" });
       }
     } else {
       return res.status(400).json({ error: "Invalid Credientials " });
@@ -208,6 +213,8 @@ const userSignIn = async (req, res) => {
     return res.status(400).json({ error: "Invalid Credientials" });
   }
 };
+
+
 
 //  send mail for reset password
 const SendResetPassword = (name,email,token)=>{
@@ -229,7 +236,7 @@ const SendResetPassword = (name,email,token)=>{
       from:process.env.EMAIL,
       to:email,
       subject:'For Reset Password',
-      html:`<p>Hi ${name}, please click here to <a href="http://127.0.0.1:3000/forget-password?token=${token}"> Reset </a> your password.</p>`
+      html:`<p>Hi ${name}, please click here to <a href="${process.env.CIIENT_URL}/forget-password?token=${token}"> Reset </a> your password.</p>`
     }
     
 
@@ -313,7 +320,7 @@ const sendVerificationLink = async (req,res)=>{
 }
 
 const userDetails = async (req, res) => {
-  return res.status(200).send(req.rootUser);
+   res.status(200).send(req.rootUser);
 };
 
 const userDetailsUpdate = async (req, res) => {

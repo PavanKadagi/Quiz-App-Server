@@ -3,12 +3,12 @@ const User = require('../models/userSchema');
 const adminAuthenticate = async (req,res,next)=>{
     try{
         const token = req.cookies.admin;
-        // console.log('req',token)
+        console.log('req',token,req.cookies)
    const verifyToken = await  jwt.verify(token,process.env.SECRETE_KEY);
    const rootUser = await User.findOne({_id:verifyToken._id, "tokens.token":token})
 
    if(!rootUser) {
-    throw new Error('User not found') ;
+    throw new Error('Admin not found') ;
     }
 
 

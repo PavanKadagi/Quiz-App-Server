@@ -32,7 +32,7 @@ router.route("/contact").post(authenticate, messageFromUser);
 router.route("/logout").get(authenticate, userLogout);
 router.route("/answer").post(authenticate, addAnswerToUser);
 router.route("/getAnswers").get(authenticate, getAnswers);
-router.route('/verify').patch(verifyMail);
+router.route('/verify').get(verifyMail);
 router.route('/forget').post(forgetPassword);
 router.route('/forget-password').patch(verifyPassword)
 router.route('/forget-password').post(resetPassword);

@@ -1,15 +1,19 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/userSchema');
-const Authenticate = async (req,res,next)=>{
+const cookieParser = require('cookie-parser');
+const authenticate = async (req,res,next)=>{
+    const token = req.cookies.user;
+    // console.log(window.localStorage.getItem('userLogin'))
+    // console.log(cookieParser.JSONCookie())   
     try{
-        const token = req.cookies.user;
-        // console.log('req',token)
+        console.log('req',token,req.cookies,req.session)
    const verifyToken = await  jwt.verify(token,process.env.SECRETE_KEY);
    const rootUser = await User.findOne({_id:verifyToken._id, "tokens.token":token})
 
    if(!rootUser) {
     throw new Error('User not found') ;
     }
+
 
 
 
@@ -25,4 +29,4 @@ const Authenticate = async (req,res,next)=>{
     }
 }
 
-module.exports = Authenticate;
+module.exports = authenticate;
