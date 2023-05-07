@@ -16,9 +16,10 @@ const adminLogin = async(req,res)=>{
             console.log("-------------token", token);
     
             res.cookie("admin", token, {
-              expires: new Date(Date.now() + 25892000),
+              expires: new Date(Date.now() + 258900000),
               httpOnly: true,
-              // path: "/",
+              secure:true,
+              sameSite:"none"
             });
             //  25892000000 (30days)
         return res.status(200).json({ message: "Signin Successfull...!",token });
